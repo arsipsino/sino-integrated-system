@@ -1,11 +1,19 @@
-// Konfigurasi portal. Isi URL frontend setelah alamat deployment masing-masing diverifikasi.
-// Jangan isi dengan URL endpoint Apps Script; yang dibutuhkan di sini adalah URL frontend.
+
+// SINO IMS - Integrated Application Configuration
+
 export const APP_CONFIG = {
-  identityApiBase: "", // contoh: https://sino-api.example.workers.dev
+  // Layanan identitas terpusat belum dikonfigurasi.
+  identityApiBase: "",
+
+  // Alamat frontend masing-masing modul.
   modules: {
-    arsip: "",
-    purchasing: "", // dapat memakai frontend Arsip yang sama jika memang satu aplikasi
-    ga: "",
-    stok: ""
+    arsip: "https://arsipsino.github.io/dokumen/",
+
+    // Sementara menggunakan aplikasi Arsip Dokumen.
+    purchasing: "https://arsipsino.github.io/dokumen/",
+
+    ga: "https://erpmars.github.io/sino-ga-system/",
+
+    stok: "https://erpmars.github.io/stok-mars/"
   }
 };
