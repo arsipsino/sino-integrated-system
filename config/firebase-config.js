@@ -1,12 +1,12 @@
-// Isi dengan konfigurasi Web App dari Firebase Console.
-// Konfigurasi web Firebase bukan private key. Jangan pernah memasukkan service-account JSON di frontend.
+
 export const firebaseConfig = {
-  apiKey: "ISI_API_KEY_FIREBASE",
-  authDomain: "ISI_PROJECT_ID.firebaseapp.com",
-  projectId: "ISI_PROJECT_ID",
-  appId: "ISI_APP_ID"
+  apiKey: "AIzaSyDBc5H06dWGZlv2nQnHl8k-GAH6KgCo3eY",
+  authDomain: "sino-integrated-management.firebaseapp.com",
+  projectId: "sino-integrated-management",
+  storageBucket: "sino-integrated-management.firebasestorage.app",
+  messagingSenderId: "807213967124",
+  appId: "1:807213967124:web:6dc7c6aee668b7a3440401",
+  measurementId: "G-4JW26BVZL8"
 };
 
-export const firebaseReady = !Object.values(firebaseConfig).some(v =>
-  String(v).startsWith("ISI_")
-);
+export const firebaseReady = true;
